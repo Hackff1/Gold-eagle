@@ -72,7 +72,7 @@ total_requests = 0
 
 while True:
     for token in tokens:
-        count = random.randint(240, 270)
+        count = random.randint(210, 250)
         response = send_request(available_taps, count, token)
         print(f"{CYAN}Response for token {token}:{RESET} {response}")
         total_requests += 1
