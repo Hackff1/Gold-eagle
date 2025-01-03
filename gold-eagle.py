@@ -82,7 +82,7 @@ while True:
         print(f"{GREEN}Finished delay of {delay:.2f} seconds. Moving to the next request...{RESET}")
         
         if total_requests >= 4:
-            sleep_time = random.uniform(4 * 60, 6 * 60)
+            sleep_time = random.uniform(16 * 60, 17 * 60)
             print(f"{RED}Waiting for {sleep_time:.2f} seconds after 5 requests...{RESET}")
             time.sleep(sleep_time)
             total_requests = 0  # Reset the counter after sleeping
