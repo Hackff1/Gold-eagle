@@ -1,1 +1,1 @@
-worker: python gold-eagle.py
+web: python gold-eagle.py
