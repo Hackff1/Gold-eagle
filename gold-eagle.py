@@ -37,7 +37,7 @@ print(f"{RED}{BOLD}{UNDERLINE}YouTube: https://youtube.com/@foketcrypto{RESET}")
 print(f"{GREEN}{'=' * 70}{RESET}")
 
 def send_request(available_taps, count, token, max_retries=3):
-    url = 'https://api-gw.geagle.online/tap'
+    url = 'https://gold-eagle-api.fly.dev/tap'
     headers = {
         'accept': 'application/json, text/plain, */*',
         'accept-language': 'en-US,en;q=0.9',
