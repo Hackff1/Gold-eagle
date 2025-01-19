@@ -144,8 +144,8 @@ available_taps = 1000
 while True:
     for token in tokens:
         print(f"\n{BLUE}Processing token: {token}{RESET}")
-        for i in range(4):
-            count = random.randint(240, 270)
+        for i in range(1):
+            count = random.randint(510, 520)
             response = send_request(available_taps, count, token, secret_hex)
             
             if "error" in response:
@@ -159,6 +159,6 @@ while True:
         
         print(f"{BLUE}Completed 4 requests for token {token}.{RESET}")
 
-    sleep_time = random.uniform(15.5 * 60, 16 * 60)
+    sleep_time = random.uniform(8 * 60, 8.3* 60)
     print(f"{RED}Sleeping for {sleep_time:.2f} seconds before processing next batch of tokens...{RESET}")
     time.sleep(sleep_time)
